@@ -1,0 +1,10 @@
+.holiday-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 5px;
+    margin: 0 20px;
+}
+.dropdown-menu li{
+    list-style: none;
+}
