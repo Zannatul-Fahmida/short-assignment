@@ -8,3 +8,8 @@
 .dropdown-menu li{
     list-style: none;
 }
+.input-date{
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 18px;
+}

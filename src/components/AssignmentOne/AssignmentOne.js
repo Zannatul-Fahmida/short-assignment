@@ -79,31 +79,31 @@ const AssignmentOne = () => {
                         </button>
                     </li>
                     <li>
-                        <button value="yesterday" onClick={(e) => handleFilterOption(e)}>
+                        <button value="Yesterday" onClick={(e) => handleFilterOption(e)}>
                             Yesterday
                         </button>
                     </li>
                     <li>
-                        <button value="week" onClick={(e) => handleFilterOption(e)}>
+                        <button value="Last week" onClick={(e) => handleFilterOption(e)}>
                             Last Week
                         </button>
                     </li>
                     <li>
-                        <button value="month" onClick={(e) => handleFilterOption(e)}>
+                        <button value="Last month" onClick={(e) => handleFilterOption(e)}>
                             Last Month
                         </button>
                     </li>
                     <li>
-                        <button value="custom" onClick={(e) => handleFilterOption(e)}>
+                        <button value="Custom" onClick={(e) => handleFilterOption(e)}>
                             Custom
                         </button>
                     </li>
                 </ul>
             )}
             {
-                filterOption === 'custom' && <div>
-                    <input type="text" name="startDate" id="startDate" placeholder="YYYY-MM-DD" onBlur={(e) => setStartDate(e.target.value)} />
-                    <input type="text" name="endDate" id="endDate" placeholder="YYYY-MM-DD" onBlur={(e) => setEndDate(e.target.value)} />
+                filterOption === 'Custom' && <div>
+                    <input className="input-date" type="text" name="startDate" id="startDate" placeholder="YYYY-MM-DD" onChange={(e) => setStartDate(e.target.value)} />
+                    <input className="input-date" style={{marginLeft: "10px"}} type="text" name="endDate" id="endDate" placeholder="YYYY-MM-DD" onChange={(e) => setEndDate(e.target.value)} />
                 </div>
             }
             <div className="holiday-container">
